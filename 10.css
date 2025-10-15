@@ -1,0 +1,262 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(2px);
+  padding: 0 20px;
+  letter-spacing: 3px;
+  width: 100%;
+  background: transparent;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1
+  px;
+}
+
+.nav ul li {
+  font-size: 18px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+}
+.nav ul li a:hover {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.heading {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  padding: 5px 15px;
+}
+
+.search {
+  padding: 10px;
+}
+.search label {
+  color: black;
+  font-weight: bold;
+}
+.search input {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  border: 1px solid rgba(222, 184, 135, 0.548);
+}
+
+/* Hero Section (Background Image) */
+.hero {
+  min-height: 100vh;
+  background: url("./imgs/Homepage-Desktop_89d7bc2a-e866-4e2d-9870-ad1eddcce467.webp")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+.hero p {
+  font-size: 1rem;
+  width: 250px;
+}
+.hero-btn {
+  border: 2px solid rgba(255, 255, 255, 0.897);
+  padding: 12px 25px;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Video Section */
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between; /* left text, right button */
+  align-items: end; /* neeche bottom align */
+  padding: 40px;
+  color: white;
+  z-index: 1;
+}
+.video-content {
+  flex-wrap: wrap;
+}
+.video-heading {
+  font-size: 2rem;
+}
+.video-paragraph {
+  font-size: 1rem;
+  width: 250px;
+}
+.video-btn {
+  border: 2px solid rgba(255, 255, 255, 0.897);
+  padding: 12px 25px;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+.video-btn:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.mens {
+  min-height: 100vh;
+  background-image: url("./imgs/Yankees_Homepage-Refresh2_Desktop.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  color: white;
+  padding: 20px;
+}
+.men-heading {
+  margin-bottom: 5px;
+}
+.men-paragraph {
+  font-size: 1rem;
+  max-width: 350px;
+}
+.men-btn {
+  border: 1px solid rgba(255, 255, 255, 0.897);
+  padding: 12px 25px;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  margin: 10px;
+}
+.men-btn:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.men-card {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+
+}
+.mencard-content {
+  flex: 1 1 250px;
+  max-width: 350px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+}
+.mencard-content img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.name {
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  padding: 10px;
+  margin: 8px;
+  background: transparent;
+}
+.price {
+  display: flex;
+  /* text-align: center; */
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.price h3 {
+  /* margin: 7px; */
+  font-size: 1.3rem;
+}
+.price p {
+  /* border: 1px solid rgba(56, 54, 54, 0.479); */
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+/* .price P:hover {
+  background-color: red;
+} */
+.mencard-btn {
+  padding: 7px 10px;
+  font-size: 1rem;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+}
+.mencard-btn a {
+  text-decoration: none;
+  color: black;
+}
+.mencard-btn:hover {
+  background-color: rgba(0, 0, 0, 0.035);
+  padding:1px 50px;
+}
+
+#WOMENS {
+  background-image: url("./imgs/womn\ background.jpg");
+}
+#KIDS {
+  background-image: url("./imgs/KidsFall_Homepage_Desktop_79a952fa-3061-410c-893e-6abfce74a92d.webp");
+}
+#kid1:hover {
+  background-image: url("./imgs/kids\ jkt\ 1.webp");
+  cursor: pointer;
+}
